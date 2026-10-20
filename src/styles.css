@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  background-color: #dbe5e8;
+  color: #1f2933;
+  font-family: "Times New Roman", "Tinos", Times, serif;
+  font-size: calc(15px + 0.15vw);
+  line-height: 1.6;
+}
+
+.page {
+  width: 92%;
+  max-width: 1180px;
+  margin: 24px auto;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+header {
+  padding: 28px 5%;
+  background-color: #16324f;
+  color: #ffffff;
+  text-align: left;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Times New Roman", "Tinos", Times, serif;
+  font-size: calc(28px + 1vw);
+}
+
+header p {
+  margin: 6px 0 0;
+}
+
+.site-layout {
+  display: flex;
+  align-items: stretch;
+}
+
+nav {
+  width: 28%;
+  padding: 28px 20px;
+  background-color: #e9f0f2;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 10px 12px;
+  border-left: 4px solid transparent;
+  color: #16324f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a.active {
+  border-left-color: #d26a36;
+  background-color: #ffffff;
+}
+
+main {
+  width: 70%;
+  min-height: 100vh;
+  padding: 38px 6%;
+  background-color: #ffffff;
+}
+
+main h2,
+main h3 {
+  color: #16324f;
+  font-family: "Times New Roman", "Tinos", Times, serif;
+}
+
+main h2 {
+  margin-top: 0;
+  font-size: calc(23px + 0.45vw);
+}
+
+main h3 {
+  margin-bottom: 4px;
+  font-size: calc(18px + 0.2vw);
+}
+
+.intro {
+  font-size: calc(17px + 0.2vw);
+}
+
+.entry {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d5dde0;
+}
+
+.entry:last-child {
+  border-bottom: 0;
+}
+
+.entry-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: baseline;
+}
+
+.entry-heading p {
+  margin: 0;
+  color: #53636d;
+  font-size: calc(13px + 0.1vw);
+  white-space: nowrap;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #e9f0f2;
+}
+
+.contact-link {
+  color: #a34820;
+}
+
+.calculator {
+  margin-top: 42px;
+  padding: 26px;
+  border: 2px solid #9fb8c1;
+  border-radius: 6px;
+  background-color: #f3f7f8;
+}
+
+.calculator-inputs,
+.calculator-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.input-group {
+  flex: 1 1 210px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #7c9199;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.calculator-buttons button {
+  min-width: 54px;
+  padding: 9px 15px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #16324f;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.calculator-buttons button:hover {
+  background-color: #28577f;
+}
+
+.calculator-buttons .clear-button {
+  background-color: #9b3f2c;
+}
+
+.calculator-result {
+  min-height: 55px;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.calculator-result h3 {
+  margin: 0;
+  font-size: calc(20px + 0.4vw);
+}
+
+.negative-result {
+  color: #c00000;
+}
+
+footer {
+  padding: 18px 5%;
+  background-color: #16324f;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+@media (min-width: 1001px) {
+  main {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .site-layout {
+    flex-wrap: wrap;
+  }
+
+  main {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .page {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  header {
+    padding: 22px 4%;
+    text-align: center;
+  }
+
+  .site-layout {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 10px 3%;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  nav a {
+    padding: 7px 8px;
+    border-left: 0;
+    border-bottom: 3px solid transparent;
+    font-size: calc(12px + 0.5vw);
+  }
+
+  nav a:hover,
+  nav a.active {
+    border-bottom-color: #d26a36;
+  }
+
+  main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 28px 6%;
+  }
+
+  .entry-heading {
+    display: block;
+  }
+
+  .entry-heading p {
+    white-space: normal;
+  }
+
+  .calculator {
+    padding: 18px;
+  }
+
+  .calculator-buttons button {
+    flex: 1 1 25%;
+  }
+}
